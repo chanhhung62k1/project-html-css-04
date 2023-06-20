@@ -636,11 +636,11 @@ a {
     text-align: center;
 }
 
-.service__cta  {
+.service__cta {
     margin-top: 45px;
     min-width: 214px;
-    color: #FF5B2E;
-    border-color: #FF5B2E;
+    color: #ff5b2e;
+    border-color: #ff5b2e;
     padding: 20px 40px;
 }
 
@@ -701,4 +701,126 @@ a {
 .service__card--link::after {
     content: url(../icon/arrowupright.svg);
     margin: 2px 0 0 6px;
+}
+
+.staff {
+    padding-top: 130px;
+}
+
+.staff-top {
+    text-align: center;
+}
+
+.staff__heading {
+    margin-top: 15px;
+}
+
+.staff__list {
+    margin: 48px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 32px;
+}
+
+.staff__item {
+    text-align: center;
+}
+
+.staff__item-media {
+    border-radius: 130px;
+    position: relative;
+}
+
+.staff__item-media::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 94%;
+    border-radius: inherit;
+}
+
+.staff__item-media::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    width: calc(100% + 30px);
+    height: 100%;
+    transform: translateX(-50%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.staff__item:nth-child(even) .staff__item-media::before {
+    background-position: 0 22px;
+}
+
+.staff__item:nth-child(1) .staff__item-media::after {
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff__item:nth-child(1) .staff__item-media::before {
+    background-image: url(../img/staff-decoratos-01.svg);
+}
+
+.staff__item:nth-child(2) .staff__item-media::after {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.staff__item:nth-child(2) .staff__item-media::before {
+    background-image: url(../img/staff-decoratos-02.svg);
+}
+
+.staff__item:nth-child(3) .staff__item-media::after {
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.staff__item:nth-child(3) .staff__item-media::before {
+    background-image: url(../img/staff-decoratos-03.svg);
+}
+
+.staff__item:nth-child(4) .staff__item-media::after {
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.staff__item:nth-child(4) .staff__item-media::before {
+    background-image: url(../img/staff-decoratos-04.svg);
+}
+
+.staff__img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    z-index: 1;
+}
+
+.staff__title {
+    margin-top: 34px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #656689;
+}
+
+.staff__name {
+    margin-top: 14px;
+    font-family: "Sora";
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #000958;
+}
+
+.staff__cta {
+    text-align: center;
+}
+
+.staff__btn {
+    border: 1px solid #ff5b2e;
+    color: #ff5b2e;
+    opacity: 0.6;
 }
